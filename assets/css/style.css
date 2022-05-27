@@ -14,6 +14,49 @@ header {
 body{
     font-size: small;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.start{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start button {
+    font-size: large;
+    font-weight: 500;
+    padding: 10px 20px;
+    outline: auto;
+    border: 0cm;
+    cursor: pointer;
+}
+
+.rules {
+    font-size: larger;
+    font-weight: 500;
+    padding: 15px 30px;
+    width:fit-content;
+    color: white;
+    background: red;
     text-align: center;
+}
+
+.rule-box {
+    height: 100px;
+    padding: 5px 30px;
+    border: 0cm;
+    background: red;
+    width: fit-content;
+    color: white;
+}
+
+.buttons {
+    font-size: large;
+    font-weight: 500;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
 }
 
