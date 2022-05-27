@@ -5,6 +5,7 @@
 }
 
 header {
+    display: none;
     font-size: larger;
     padding: 25px;
     text-align: center;
@@ -16,26 +17,47 @@ body{
     background-color: grey;
 }
 
-.start{
+.start,
+.rules,
+.rule-box,
+.quiz-box,
+.result-box{
     position:absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, .2),
+                0px 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+.start button {
+    font-size: large;
+    font-weight: 500;
+    padding: 10px 20px;
+    outline: auto;
+    border: 0cm;
+    cursor: pointer;
+}
+
+.start button:hover{
+    background-color: gray;
+    color: greenyellow;
 }
 
 .rules {
-    display: none;
+    opacity: 0;
     align-items: center;
     font-size: larger;
     padding: 15px 30px;
     width:fit-content;
     color: white;
     background: red;
+    pointer-events: none;
         
 }
 
 .rule-box {
-    display: none;
+    opacity: 0;
     height: 100px;
     padding: 5px 30px;
     border: 0cm;
@@ -44,28 +66,31 @@ body{
     color: white;
     font-weight: 500;
     justify-content: center;
+    pointer-events: none;
 }
 
 .buttons {
-    display: none;
+    display:none ;
     font-size: large;
     font-weight: 500;
     padding: 5px 10px;
-    outline: none;
+    outline: auto;
+    border:0cm ;
     cursor: pointer;
 }
 
 .quiz-box{
-    display: none;
+    
     position:absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: fit-content;
     background-color: black;
     color: white;
     font-size: larger;
-    
+    opacity: 0;
+    pointer-events: none;  
 }
 
 .quiz-box header{
@@ -143,7 +168,8 @@ body{
 .quiz-box section .answers .option:hover {
     color:greenyellow;
     background: gray;
-    border-color: orange;
+    border: 1cm;
+    outline: auto;
 }
 .quiz-box section .answers .option:last-child{
     margin-bottom: 0px;
@@ -190,11 +216,60 @@ body{
     background:gray ;
     color:greenyellow;
 }
-.start button {
-    font-size: large;
-    font-weight: 500;
-    padding: 10px 20px;
-    outline: auto;
-    border: 0cm;
-    cursor: pointer;
+
+.result-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 500px;
+    background-color: rgb(255, 0, 242);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border: 1cm;
+    display: inline;
+    gap: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.result-box .finished {
+    padding: auto;
+    text-align: center;
+}
+
+.result-box .finished .enter {
+    padding: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.result-box .leaderboard {
+
+}
+
+.result-box .replay {
+    padding: 10px 10px;
+}
+
+.result-box .replay .restart {
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.result-box .replay .quit {
+    padding: 10px 10px;
+    font-size: 15px;
+}
+.result-box .replay .restart:hover {
+    color: greenyellow;
+    background: grey;
+}
+
+.result-box .replay .quit:hover{
+    color: greenyellow;
+    background: gray;
 }

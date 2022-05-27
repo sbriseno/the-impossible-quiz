@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title>The Impossible Quiz!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js"></script>
 </head>
@@ -23,13 +24,11 @@
             <li>You will only have 15 seconds for each question</li>
             <li>If you answer a question correctly, press "Next" to proceed</li>
             <li>A 5 second time penalty will be deducted if you answer incorrectly</li>
-            <li>Once the quiz is done, enter your initials to be placed on a leaderboard</li>
+            <li>Once the quiz is done, enter your name to be placed on a leaderboard</li>
         </ul>
     </div>
     <div class="buttons">
-        <button class="exit">Exit quiz</button>
         <button class="continue">Continue</button>
-        
     </div> 
     <div class="quiz-box">
         <header>
@@ -50,11 +49,11 @@
                 </div>
                 <div class="option">
                     <span>Variable was not inputted correctly</span>
-                    <div class="icon-check"><i class="fas fa-x"></i></div>
+                    <div class="icon-x"><i class="fas fa-x"></i></div>
                 </div>
                 <div class="option">
                     <span>Variable does not exist</span>
-                    <div class="icon-check"><i class="fas fa-x"></i></div>
+                    <div class="icon-x"><i class="fas fa-x"></i></div>
                 </div>
             </div>    
         </section>
@@ -66,11 +65,25 @@
             <button class="next-btn">Next</button>
         </footer>
     </div>      
-    <div class="buttons">
-        <button class="exit">Exit quiz</button>
-        <button class="continue">Continue</button>
-        
-    </div> 
+
+    <div class="result-box">
+        <div class="finished">
+            <span> You've finished the quiz!</span>
+        </div>
+        <div class="enter">
+            <span> Enter your name below to be placed on a leaderboard</span>
+        </div>
+        <div class="leaderboard">
+            Current rankings
+
+        </div>
+        <div class="replay">
+            <button class="restart"> Restart quiz</button>
+            <button class="quit">Exit quiz</button>
+        </div>
+
+
+    </div>
 </body>
 </html>
 
