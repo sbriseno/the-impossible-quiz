@@ -19,15 +19,53 @@
     </div>
     <div class="rule-box">
         <ul>
-            <li>1. You will have 2 minutes to take the quiz</li>
-            <li>2. You will only have 15 seconds for each question</li>
-            <li>3. If you answer a question correctly, you will move on to the next question</li>
-            <li>4. If you answer incorrectly, a 5 second time penalty will be deducted from your total time remaining</li>
-            <li>5. Once the quiz is done, enter your initials to be placed on a leaderboard</li>
+            <li>You will have 2 minutes to take the quiz</li>
+            <li>You will only have 15 seconds for each question</li>
+            <li>If you answer a question correctly, press "Next" to proceed</li>
+            <li>A 5 second time penalty will be deducted if you answer incorrectly</li>
+            <li>Once the quiz is done, enter your initials to be placed on a leaderboard</li>
         </ul>
     </div>
+    <div class="buttons">
+        <button class="exit">Exit quiz</button>
+        <button class="continue">Continue</button>
         
-    
+    </div> 
+    <div class="quiz-box">
+        <header>
+            <div class="title">The Impossible Quiz</div>
+            <div class="timer">
+                <div class="clock">Time Left</div>
+                <div class="timer-sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="questions">
+                <span>What does the expression "undefined" mean?</span>
+            </div>
+            <div class="answers">
+                <div class="option">
+                    <span>Variable hasn't been assigned a value</span>
+                    <div class="icon-check"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Variable was not inputted correctly</span>
+                    <div class="icon-check"><i class="fas fa-x"></i></div>
+                </div>
+                <div class="option">
+                    <span>Variable does not exist</span>
+                    <div class="icon-check"><i class="fas fa-x"></i></div>
+                </div>
+            </div>    
+        </section>
+
+        <footer>
+            <div class="total-questions">
+                <span><p>Question</p><p>1</p>of<p>10</p></span>    
+            </div>
+            <button class="next-btn">Next</button>
+        </footer>
+    </div>      
     <div class="buttons">
         <button class="exit">Exit quiz</button>
         <button class="continue">Continue</button>
@@ -35,3 +73,4 @@
     </div> 
 </body>
 </html>
+
