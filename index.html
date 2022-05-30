@@ -2,7 +2,7 @@
 <html lang="en"></html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Impossible Quiz!</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,11 +14,13 @@
     <h1>Click the start button below to begin the quiz!</h1>
 </header>
 <body>
-    <div class="start"><button>Start Quiz</button></div>
-    <div class="rules">
+    <div class="begin">
+        <button class="start" id="startquiz">Start Quiz</button>
+    </div>
+    <div class="rules" id="follow">
         <h2>Rules of the quiz!</h2>
     </div>
-    <div class="rule-box">
+    <div class="rulebox" id="rulebox">
         <ul>
             <li>You will have 2 minutes to take the quiz</li>
             <li>You will only have 15 seconds for each question</li>
@@ -30,7 +32,7 @@
     <div class="buttons">
         <button class="continue">Continue</button>
     </div> 
-    <div class="quiz-box">
+    <div class="quizbox">
         <header>
             <div class="title">The Impossible Quiz</div>
             <div class="timer">
@@ -66,7 +68,7 @@
         </footer>
     </div>      
 
-    <div class="result-box">
+    <div class="result">
         <div class="finished">
             <span> You've finished the quiz!</span>
         </div>

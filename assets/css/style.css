@@ -5,7 +5,7 @@
 }
 
 header {
-    display: none;
+    opacity: 0;
     font-size: larger;
     padding: 25px;
     text-align: center;
@@ -17,35 +17,33 @@ body{
     background-color: grey;
 }
 
-.start,
+.begin,
 .rules,
-.rule-box,
-.quiz-box,
-.result-box{
+.rulebox,
+.quizbox,
+.result{
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, .2),
-                0px 6px 20px 0 rgba(0, 0, 0, .19);
 }
 
-.start button {
+.begin button {
     font-size: large;
     font-weight: 500;
     padding: 10px 20px;
     outline: auto;
     border: 0cm;
     cursor: pointer;
+   
 }
 
-.start button:hover{
+.begin button:hover{
     background-color: gray;
     color: greenyellow;
 }
 
 .rules {
-    opacity: 0;
     align-items: center;
     font-size: larger;
     padding: 15px 30px;
@@ -53,10 +51,10 @@ body{
     color: white;
     background: red;
     pointer-events: none;
-        
+    opacity: 0;
 }
 
-.rule-box {
+.rulebox {
     opacity: 0;
     height: 100px;
     padding: 5px 30px;
@@ -70,17 +68,17 @@ body{
 }
 
 .buttons {
-    display:none ;
     font-size: large;
     font-weight: 500;
     padding: 5px 10px;
     outline: auto;
     border:0cm ;
     cursor: pointer;
+    opacity: 0;
 }
 
-.quiz-box{
-    
+.quizbox{
+    opacity: 0;
     position:absolute;
     top: 55%;
     left: 50%;
@@ -93,7 +91,7 @@ body{
     pointer-events: none;  
 }
 
-.quiz-box header{
+.quizbox header{
     height: 125px;
     position: relative;
     z-index: 99;
@@ -104,11 +102,11 @@ body{
     border-radius: 5px 5px 0 0 ;
 }
 
-.quiz-box header .title {
+.quizbox header .title {
     font-size: 20px;
 }
 
-.quiz-box header .timer {
+.quizbox header .timer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,13 +117,13 @@ body{
     padding: 5px 5px;
 }
 
-.quiz-box header .clock {
+.quizbox header .clock {
     font-size: 20px;
     font-weight: 400;
     user-select: none;
 }
 
-.quiz-box header .timer-sec {
+.quizbox header .timer-sec {
     font-size: 20px;
     font-weight: 400;
     user-select: none;
@@ -136,22 +134,22 @@ body{
     line-height: 30px;
 }
 
-.quiz-box section {
+.quizbox section {
     padding: 15px 30px 20px 30px;
 }
 
-.quiz-box section .questions{
+.quizbox section .questions{
     font-size: 25px;
     width: fit-content;
     padding: 20px;
 }
 
-.quiz-box section .answers {
+.quizbox section .answers {
     padding: 10px 30px;
     display: block;
 }
 
-.quiz-box section .answers .option {
+.quizbox section .answers .option {
     background:red;
     border: 2px;
     border-radius: 5px;
@@ -165,17 +163,17 @@ body{
     transition: all .1s ease-in-out;
 }
 
-.quiz-box section .answers .option:hover {
+.quizbox section .answers .option:hover {
     color:greenyellow;
     background: gray;
     border: 1cm;
     outline: auto;
 }
-.quiz-box section .answers .option:last-child{
+.quizbox section .answers .option:last-child{
     margin-bottom: 0px;
 }
 
-.quiz-box footer {
+.quizbox footer {
     height: auto;
     width: auto;
     display: flex;
@@ -184,7 +182,7 @@ body{
     justify-content: space-between;    
 }
 
-.quiz-box footer .total-questions span{
+.quizbox footer .total-questions span{
     height: auto;
     width: auto;
     display: flex;
@@ -195,12 +193,12 @@ body{
     user-select: none;
 }
 
-.quiz-box footer .total-questions span p{
+.quizbox footer .total-questions span p{
     font-weight: 300;
     padding: 0 5px;
 }
 
-.quiz-box footer .next-btn{
+.quizbox footer .next-btn{
     background:red;
     color: white;
     font-size: large;
@@ -212,12 +210,12 @@ body{
     transition: all .1s ease-in-out;
 }
 
-.quiz-box footer .next-btn:hover{
+.quizbox footer .next-btn:hover{
     background:gray ;
     color:greenyellow;
 }
 
-.result-box{
+.result{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -236,40 +234,37 @@ body{
     pointer-events: none;
 }
 
-.result-box .finished {
+.result .finished {
     padding: auto;
     text-align: center;
 }
 
-.result-box .finished .enter {
+.result .finished .enter {
     padding: auto;
     text-align: center;
     overflow-wrap: break-word;
 }
 
-.result-box .leaderboard {
 
-}
-
-.result-box .replay {
+.result .replay {
     padding: 10px 10px;
 }
 
-.result-box .replay .restart {
+.result .replay .restart {
     padding: 10px 10px;
     font-size: 15px;
 }
 
-.result-box .replay .quit {
+.result .replay .quit {
     padding: 10px 10px;
     font-size: 15px;
 }
-.result-box .replay .restart:hover {
+.result .replay .restart:hover {
     color: greenyellow;
     background: grey;
 }
 
-.result-box .replay .quit:hover{
+.result .replay .quit:hover{
     color: greenyellow;
     background: gray;
 }
